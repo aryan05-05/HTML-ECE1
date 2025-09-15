@@ -1,2 +1,2 @@
 # HTML-ECE1
-This is my first git file
+This is my first git repo
