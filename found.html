@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="/rsponse.html" target="_blank" name="biodata" method="get">
+      <fieldset>
+        <legend>Biodata</legend>
+        <label for="Name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="Name"
+          placeholder="Enter Your Name"
+          required
+        />
+        <br /><br />
+        <label for="dob">DOB</label>
+        <input type="date" id="DOB" name="DOB" required />
+        <br /><br />
+
+        <label for="attempty">Attempt</label>
+        <input type="number" id="Attempt" name="Attempt" min="1" max="10" />
+        <br /><br />
+
+        <label for="mail">Email</label>
+        <input
+          type="email"
+          id="email"
+          name="name"
+          placeholder="Enter your Email"
+          required
+        />
+        <br /><br />
+
+        <label for="tel">Phone</label>
+        <input
+          type="tel"
+          id="tel"
+          name="tel"
+          placeholder="Enter your phone number"
+          required
+        />
+        <br /><br />
+
+        <label for="add">address</label>
+        <textarea name="text" id="add" rows="5" cols="10"></textarea>
+        <br /><br />
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="male" required />
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" value="female" required />
+        <label for="female">Female</label>
+        <br /><br />
+
+        <label for="check">vehicles u have:</label>
+        <input type="checkbox" id="bike" name="vehicles1" value="bike" />
+        <label for="bike">Bike</label>
+        <input type="checkbox" name="vehicles2" id="car" value="car" />
+        <label for="car">Car</label>
+        <br /><br />
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          id="pass"
+          name="pass"
+          placeholder="Enter your Password"
+          required
+        />
+        <br /><br />
+        <label for="select">Select you Programming language</label>
+        <select name="select" id="select">
+          <option value="">Select your choice</option>
+          <optgroup label="Programming Language">
+            <option value="C">C</option>
+            <option value="C++">C++</option>
+            <option value="Java">Java</option>
+          </optgroup>
+          <optgroup label="Frontend">
+            <option value="Html">Html</option>
+            <option value="Css">Css</option>
+            <option value="Java Script">Java script</option>
+          </optgroup>
+        </select>
+        <br /><br />
+        <label for="file">File Upload</label>
+        <input type="file" id="file" name="file" required />
+        <br /><br />
+        <label for="appoint">Appointment</label>
+        <input type="time" id="appoint" name="appoint" required />
+        <br><br>
+        <input type="submit" value="Done">
+        <input type="reset" value="Restore">
+      </fieldset>
+    </form>
+  </body>
+</html>
